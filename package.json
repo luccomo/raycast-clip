@@ -1,0 +1,40 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "obsidian-to-slack",
+  "title": "Obsidian to Slack",
+  "description": "Convert Obsidian-flavored Markdown in your clipboard to Slack mrkdwn format",
+  "icon": "command-icon.png",
+  "author": "luccomeau",
+  "categories": ["Productivity"],
+  "platforms": ["macOS"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "obsidian-to-slack",
+      "title": "Convert Clipboard to Slack Format",
+      "description": "Reads Obsidian Markdown from clipboard, converts to Slack mrkdwn, and copies result back",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.93.0",
+    "@raycast/utils": "^1.19.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "22.13.10",
+    "eslint": "^8.57.1",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  }
+}
